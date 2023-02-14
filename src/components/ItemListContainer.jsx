@@ -1,14 +1,12 @@
 import React from 'react'
 
-const ItemListContainer = () => {
+const ItemListContainer = ({greeting}) => {
   return (
-    <div className='greeting' style={{
+    <div>
+       <p className='greeting' style={{
       textAlign:'center',
       margin:'10vw'
-    }}>
-      <h2>¡Bienvenido!</h2>
-      <p>Nuestro sitio está en construcción. </p>
-      <p>Pronto podrás ver nuestros productos.</p>
+    }}>{greeting}</p>
     </div>
   )
 }
